@@ -18,7 +18,7 @@ function createData(time, amount) {
   return { time, amount };
 }
 
-export default function Chart() {
+const Chart = () => {
   const { loading, error, data } = useQuery(FLIGHT_STATS);
   if (loading)
     return (
@@ -71,3 +71,5 @@ export default function Chart() {
     </>
   );
 }
+
+export default Chart;

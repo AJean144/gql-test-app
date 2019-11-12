@@ -16,7 +16,7 @@ const useStyles = makeStyles({
   }
 });
 
-export default function Deposits() {
+const PilotOverview = () => {
   const classes = useStyles();
   const { loading, error, data } = useQuery(PILOT_OVERVIEW);
 
@@ -85,3 +85,5 @@ export default function Deposits() {
     </>
   );
 }
+
+export default PilotOverview;

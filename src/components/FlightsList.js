@@ -14,7 +14,7 @@ import { Grid, Button } from "@material-ui/core";
 import Modal from "./Modal";
 import { get } from "lodash";
 
-export default function Orders() {
+const FlightsList = () => {
   const [open, setOpen] = useState(false);
 
   const handleOpen = () => {
@@ -101,3 +101,5 @@ export default function Orders() {
     </>
   );
 }
+
+export default FlightsList;
