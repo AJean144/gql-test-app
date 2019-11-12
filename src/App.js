@@ -4,7 +4,7 @@ import { ApolloProvider } from '@apollo/react-hooks';
 import Dashboaard from './components/Dashboard'
 
 const client = new ApolloClient({
-  uri: process.env.REACT_APP_API_CALL
+  uri: `https://api.kittyhawk.io/graphql?token=${process.env.REACT_APP_API_KEY}`
 });
 
 const App = () => (
